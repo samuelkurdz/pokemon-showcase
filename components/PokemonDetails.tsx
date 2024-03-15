@@ -47,19 +47,19 @@ export function PokemonDetails({
 
         <Skeleton className="size-24" />
 
-        <section>
+        <section className="space-y-1">
           <h4 className="font-semibold">Abilities</h4>
-          <div className="flex flex-wrap gap-2 capitalize">
+          <div className="flex flex-wrap gap-2.5">
             {Array.from(Array(3), (e, i) => (
               <Skeleton className="h-5 w-16" key={i} />
             ))}
           </div>
         </section>
 
-        <section>
+        <section className="space-y-1">
           <h4 className="font-semibold">Stats</h4>
-          <div className="flex flex-col gap-2 capitalize">
-            {Array.from(Array(4), (e, i) => (
+          <div className="flex flex-col gap-2.5">
+            {Array.from(Array(5), (e, i) => (
               <div className="space-y-1.5" key={i}>
                 <Skeleton className="h-5 w-16" />
                 <Skeleton className="h-4 w-full" />
