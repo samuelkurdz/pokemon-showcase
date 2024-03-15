@@ -1,6 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Installation
 
-## Getting Started
+To run the application locally, follow these steps:
+
+1. Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/samuelkurdz/pokemon-showcase.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd pokemon-showcase
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+## Development
 
 First, run the development server:
 
@@ -16,9 +36,32 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit and saves the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Technology Stack
+
+The application is built upon React.js, Next.js.
+It uses Axios for fetching data from API.
+
+For styling, the application utilizes TailwindCSS for basic styling and responsiveness.
+
+## Deployment
+
+First, run the build command to validate app builds succesfully and generate production build folder for deployment.
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun build
+```
+
+Navigate to [Vercel](https://vercel.com)
 
 ## Learn More
 
