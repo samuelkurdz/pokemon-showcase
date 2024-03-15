@@ -43,11 +43,21 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Technology Stack
 
 The application is built upon React.js, Next.js.
-It uses Axios for fetching data from API.
+Axios will be used to make HTTP requests to the PokeAPI endpoints.
 
 For styling, the application utilizes TailwindCSS for basic styling and responsiveness.
 
-## Deployment
+No state management tool is used.
+
+### Project Structure:
+
+The project structure uses the new standard for Next.js application structure, the App Router.
+- `app/` - contains pages information, routes, loaders and layouts.
+- `components/ui` - contains reusuable UI (tiny presentational) components used in various components through the application
+- `components/` - contains mostly container components. These components are focused on UI rendering logic.
+- `lib/` - contains interfaces, and tiny extra functions required at various points in the app.
+
+## Deployment (on Vercel)
 
 First, run the build command to validate app builds succesfully and generate production build folder for deployment.
 
@@ -61,19 +71,4 @@ pnpm build
 bun build
 ```
 
-Navigate to [Vercel](https://vercel.com)
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Navigate to the [Vercel Platform](https://vercel.com) and follow instructions for production deloyment.
